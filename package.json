@@ -1,0 +1,46 @@
+{
+  "name": "test_next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "build": "next build && cross-env NODE_ENV=production node server.js",
+    "start": "next start -p 8000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "classnames": "latest",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "formik": "^1.5.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "jss": "latest",
+    "next": "^7.0.2",
+    "nodemon": "^1.18.9",
+    "nookies": "^2.0.1",
+    "prop-types": "latest",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-jss": "^8.1.0"
+  },
+  "resolutions": {
+    "terser": "3.14.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "server.js"
+    ],
+    "delay": "250",
+    "ext": "js, css"
+  }
+}
