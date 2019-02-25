@@ -64,7 +64,7 @@ class Login extends Component {
     };
 
     submit = async (data, {setSubmitting}) => {
-        const response = await fetch('http://localhost:3000/check', {
+        const response = await fetch('/check', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: new Headers({
